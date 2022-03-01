@@ -69,63 +69,28 @@
   
 
 
-// Donation Buttons
+// Donation Button
 
-// Set Donations
-
-document.getElementById('donate1').addEventListener('click', function() {
-  var output = document.getElementById('output');
-  output.innerText = '';
-    let sec = document.createElement('div'); sec.classList.add('don_sec');
-    output.appendChild(sec);
-      let title = document.createElement('h4'); title.innerText = "Choose a Donation: ";
-      output.appendChild(title);
-      let form = document.createElement('form'); form.style.display = 'block';
-        let don_op = ["$1", "$5", "$10", "$20", "$50", "$100"];
-        let selectList = document.createElement('select');
-        selectList.id = "don_op";
-        output.appendChild(selectList);
-
-        for (var i = 0; i < don_op.length; i++){
-          var option = document.createElement('option');
-          option.value = don_op[i];
-          option.text = don_op[i];
-          selectList.appendChild(option);
-        }
-      output.appendChild(form);
-      let next_bt = document.createElement('button'); next_bt.innerHTML = "Proceed"; next_bt.id='next_bt';
-      next_bt.style.position = 'absolute';
-      next_bt.style.marginTop = '5%';
-      output.appendChild(next_bt);
+// Toggle the donations box
+document.getElementById('open_donate_box').addEventListener('click', function() {
+  var donate_box = document.getElementById('donate_box');
+  if (donate_box.style.display == "none") {
+    donate_box.style.display = "block";
+  } else {
+    donate_box.style.display = "none";
+  }
 });
 
-document.getElementById('donate2').addEventListener('click', function() {
-  var output = document.getElementById('output');
-  output.innerText = '';
-    let sec = document.createElement('div'); sec.classList.add('don_sec');
-    output.appendChild(sec);
-    let title = document.createElement('h4'); title.innerText = "Make a Custom Donation: ";
-    output.appendChild(title);
-      let donation = document.createElement('input'); donation.type = 'text'; donation.name = "custome_donation"; donation.id = 'custome_donation';
-      output.appendChild(donation);
-      let button = document.createElement('button'); button.innerHTML = 'GO'; button.id='don_button'
-      output.appendChild(button);
-      let warning = document.createElement("h5"); warning.classList.add('warning');
-      output.appendChild(warning);
-      document.getElementById('don_button').addEventListener('click', function() {
-        var don = document.getElementById('custome_donation').value;
-        // we will need to add try except or something here
-        var don = parseInt(don);
-        if (don < 1) {
-          warning.innerText = 'Your donation must be at lest $1.00!'
-        }else if (don > 500) {
-          warning.innerText = 'Your donation cannot be greater than $500.00!'
-        }else{
-          warning.innerText = 'Your donation is appropriate, you can now proceed.'
-          let next_bt = document.createElement('button'); next_bt.innerHTML = "Proceed"; next_bt.id='next_bt'; 
-          next_bt.style.position = 'absolute';
-          next_bt.style.marginTop = '10%';
-          output.appendChild(next_bt);
-        }
-      });
+// Highlight the custom input option when the custom input box is clicked
+function highlightCustomAmountRadioButton() {
+  document.getElementById("donation_custom_amount").checked = true;
+}
+
+// Add onclick and oninput functions to custom donation amounts, to set the custom amount radio button to checked
+var customAmountInputBox = document.getElementById("custom_amount_input");
+customAmountInputBox.addEventListener('click', () => {
+  highlightCustomAmountRadioButton();
+});
+customAmountInputBox.addEventListener('input', () => {
+  highlightCustomAmountRadioButton();
 });
