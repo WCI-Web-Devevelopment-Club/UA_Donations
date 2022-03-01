@@ -22,7 +22,6 @@ app.use(express.urlencoded({extended: true}));
 app.post("/donate", async (req, res) => {
     let amount = req.body.amount;
     if (amount == "custom") {
-        console.log(req.body);
         let custom_amount = req.body.custom_amount;
         if (parseFloat(custom_amount) != NaN) {
             amount = parseFloat(custom_amount)*100;
