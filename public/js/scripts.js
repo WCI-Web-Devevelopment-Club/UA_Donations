@@ -93,6 +93,10 @@ document.getElementById('donate1').addEventListener('click', function() {
           selectList.appendChild(option);
         }
       output.appendChild(form);
+      let next_bt = document.createElement('button'); next_bt.innerHTML = "Proceed"; next_bt.id='next_bt';
+      next_bt.style.position = 'absolute';
+      next_bt.style.marginTop = '5%';
+      output.appendChild(next_bt);
 });
 
 document.getElementById('donate2').addEventListener('click', function() {
@@ -117,7 +121,11 @@ document.getElementById('donate2').addEventListener('click', function() {
         }else if (don > 500) {
           warning.innerText = 'Your donation cannot be greater than $500.00!'
         }else{
-          pass
+          warning.innerText = 'Your donation is appropriate, you can now proceed.'
+          let next_bt = document.createElement('button'); next_bt.innerHTML = "Proceed"; next_bt.id='next_bt'; 
+          next_bt.style.position = 'absolute';
+          next_bt.style.marginTop = '10%';
+          output.appendChild(next_bt);
         }
       });
 });
