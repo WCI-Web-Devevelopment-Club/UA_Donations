@@ -67,3 +67,37 @@
   
   })(jQuery); // End of use strict
   
+
+
+// Donation Buttons
+
+// Set Donations
+
+document.getElementById('donate1').addEventListener('click', function() {
+  var output = document.getElementById('output');
+  output.innerText = '';
+    let sec = document.createElement('div'); sec.classList.add('don_sec');
+    output.appendChild(sec);
+      let title = document.createElement('h4'); title.innerText = "Choose a Donation:";
+      output.appendChild(title);
+      let form = document.createElement('form'); form.style.display = 'block';
+        let don_op = ["$1", "$5", "$10", "$20", "$50", "$100"];
+        let selectList = document.createElement('select');
+        selectList.id = "don_op";
+        output.appendChild(selectList);
+
+        for (var i = 0; i < don_op.length; i++){
+          var option = document.createElement('option');
+          option.value = don_op[i];
+          option.text = don_op[i];
+          selectList.appendChild(option);
+        }
+      output.appendChild(form);
+});
+
+document.getElementById('donate2').addEventListener('click', function() {
+  var output = document.getElementById('output');
+  output.innerText = '';
+    let sec = document.createElement('div'); sec.classList.add('don_sec');
+    output.appendChild(sec);
+});
