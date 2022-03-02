@@ -81,19 +81,19 @@ document.getElementById('open_donate_box').addEventListener('click', function() 
   }
 });
 
-// Highlight the custom input option when the custom input box is clicked
-function highlightCustomAmountRadioButton() {
-  document.getElementById("donation_custom_amount").checked = true;
-}
+// // Highlight the custom input option when the custom input box is clicked
+// function highlightCustomAmountRadioButton() {
+//   document.getElementById("donation_custom_amount").checked = true;
+// }
 
-// Add onclick and oninput functions to custom donation amounts, to set the custom amount radio button to checked
-var customAmountInputBox = document.getElementById("custom_amount_input");
-customAmountInputBox.addEventListener('click', () => {
-  highlightCustomAmountRadioButton();
-});
-customAmountInputBox.addEventListener('input', () => {
-  highlightCustomAmountRadioButton();
-});
+// // Add onclick and oninput functions to custom donation amounts, to set the custom amount radio button to checked
+// var customAmountInputBox = document.getElementById("custom_amount_input");
+// customAmountInputBox.addEventListener('click', () => {
+//   highlightCustomAmountRadioButton();
+// });
+// customAmountInputBox.addEventListener('input', () => {
+//   highlightCustomAmountRadioButton();
+// });
 
 // var radio = document.getElementsByTagName('input');
 // var value;
