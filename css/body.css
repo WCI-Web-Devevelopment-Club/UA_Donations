@@ -104,6 +104,7 @@ form {
     .row {
         flex-wrap: wrap;
         display: block;
+        margin-left: 35%;
     }
     .hide {
         display: none;
