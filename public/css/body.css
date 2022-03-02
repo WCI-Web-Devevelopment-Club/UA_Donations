@@ -62,3 +62,51 @@
     text-align: center;
     margin: 1%;
 }
+
+input[type=radio].don_val {
+    display: none;
+}
+
+input[type=number].don_val_custom_amount {
+    background-color: transparent;
+    border: none;
+    width: 3rem;
+    outline: none;
+}
+
+label.don_val_label {
+    border: 1px solid black;
+    background-color: #ffdc44;
+    border-radius: 10px;
+    width: 4.5rem;
+    color: black;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+label.don_val_custom_amt_label {
+    display: inline-flex;
+    padding: 6px;
+}
+
+.custom_amount_label {
+    margin-bottom: 0;
+}
+
+input[type=radio]:checked+label.don_val_label {
+    background-color: #388cf4;
+    color: black;
+}
+
+input[type=submit].don_val {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+#donate_box {
+    display: none;
+    padding: 10px;
+    cursor: default;
+}

@@ -104,7 +104,7 @@ customAmountInputBox.addEventListener('input', () => {
 //   }
 // }
 
-var donation_check = document.querySelector('input[name = "amount"]:checked');
+//var donation_check = document.querySelector('input[name = "amount"]:checked');
 
 // if(donation_check != null){  //Test if something was checked
 // alert(donation_check.value); //Alert the value of the checked.
