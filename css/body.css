@@ -42,10 +42,15 @@
 
 .donate {
     border: none;
-    margin-left: 3%;
+    margin-left: 13%;
     margin-top: 3%;
 }
-
+.h2 , h4, h3{
+    width: 100%;
+}
+form {
+    margin-top:11%;
+}
 #output {
     align-items: center;
     justify-content: center;
@@ -97,17 +102,23 @@ form {
 .h4{
     width: 100%;
 }
+ .donate{
+    margin-left: 22%;
+ }
 
 @media(max-width: 750px) {
     .b1 {
-        width: 99.3%;
+        width: 78%;
         margin-top: 13%;
         text-align: center;
+    }
+    .h3 {
+        width: 78%;
     }
     .row {
         flex-wrap: wrap;
         display: block;
-        margin-left: 35%;
+        margin-left: -6%;
     }
     .hide {
         display: none;
@@ -117,8 +128,14 @@ form {
         left: 13%;
         padding: 5%;
     }
+    .b3 {
+        width: 78%;
+    }
+    .h4 {
+        width: 124%;
+    }
     form {
-        margin-top: 36%;
+        margin-top: 26%;
     }
     .don_b {
         display: block;
@@ -127,16 +144,19 @@ form {
         width: 80%;
         margin-left: 10%;
     }
+    form {
+        margin-top: 32%;
+    }
 }
 
-@media(max-width: 950px){
+@media(min-width: 760px){
     .don_b {
         display: block;
         width: 60%;
         margin-left: 22%;
     }
     .donate{
-        margin-left: 20%;
+        margin-left: 4%;
         position: absolute;
         left: 20%;
         padding: 3%;
