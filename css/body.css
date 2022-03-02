@@ -91,3 +91,29 @@
     margin-left: -6%;
     margin-top: 1%;
 } 
+form {
+    margin-top: 5%;
+}
+
+@media(max-width: 750px) {
+    .b1 {
+        width: 99.3%;
+        margin-top: 13%;
+        text-align: center;
+    }
+    .row {
+        flex-wrap: wrap;
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .donate {
+        position: absolute;
+        left: 13%;
+        padding: 5%;
+    }
+    form {
+        margin-top: 36%;
+    }
+}
