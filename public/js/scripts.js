@@ -94,3 +94,20 @@ customAmountInputBox.addEventListener('click', () => {
 customAmountInputBox.addEventListener('input', () => {
   highlightCustomAmountRadioButton();
 });
+
+// var radio = document.getElementsByTagName('input');
+// var value;
+// for (var i = 0; i < radio.length; i++) {
+//   if (radio[i].type === 'radio' && radio[i].checked) {
+//     value = radio[i].value;
+//     console.log(value);
+//   }
+// }
+
+var donation_check = document.querySelector('input[name = "amount"]:checked');
+
+// if(donation_check != null){  //Test if something was checked
+// alert(donation_check.value); //Alert the value of the checked.
+// } else {
+// alert('Nothing checked'); //Alert, nothing was checked.
+// }
