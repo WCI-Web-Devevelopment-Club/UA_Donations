@@ -69,10 +69,13 @@
     border-radius: 10px;
     width: 4.5rem;
     color: black;
-    padding: 7px;
+    padding: 1%;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    transition-duration: 0.3s;
+    margin-left: 1%;
+    margin-top: 3%;
 }
 
 .don_b:hover {
@@ -81,30 +84,11 @@
     color: black;
 }
 
-/*input[type=submit].don_val {
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-}
-
 #donate_box {
     display: none;
     padding: 10px;
     cursor: default;
     width: 110%;
     margin-left: -6%;
+    margin-top: 1%;
 }
-.don_b {
-    border: none;
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 3%;
-    padding: 1%;
-    transition-duration: 0.3s;
-}
-
-button.don_b:hover {
-    background-color: yellow;
-    border-color: blue;
-    border-style: solid;
-}*/
