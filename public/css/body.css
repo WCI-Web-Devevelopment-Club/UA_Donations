@@ -63,7 +63,7 @@
     margin: 1%;
 }
 
-/* .don_b {
+.don_b {
     border: 1px solid black;
     background-color: #ffdc44;
     border-radius: 10px;
@@ -81,13 +81,7 @@
     text-decoration: none;
     background-color: #388cf4;
     color: black;
-} */
-
-/*input[type=submit].don_val {
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-} */
+}
 
 #donate_box {
     display: none;
@@ -95,19 +89,5 @@
     cursor: default;
     width: 110%;
     margin-left: -6%;
-} 
-.don_b {
-    border: none;
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 3%;
-    padding: 1%;
-    transition-duration: 0.3s;
-}
-
-button.don_b:hover {
-    background-color: yellow;
-    border-color: blue;
-    border-style: solid;
     margin-top: 1%;
-}
+} 
