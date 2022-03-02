@@ -109,4 +109,20 @@ input[type=submit].don_val {
     display: none;
     padding: 10px;
     cursor: default;
+    width: 110%;
+    margin-left: -6%;
+}
+button.don_b {
+    border: none;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 3%;
+    padding: 1%;
+    transition-duration: 0.3s;
+}
+
+button.don_b:hover {
+    background-color: yellow;
+    border-color: blue;
+    border-style: solid;
 }
