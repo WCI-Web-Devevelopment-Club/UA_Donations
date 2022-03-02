@@ -116,4 +116,11 @@ form {
     form {
         margin-top: 36%;
     }
+    .don_b {
+        display: block;
+    }
+    .b2 {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
