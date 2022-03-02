@@ -67,12 +67,14 @@
     border: 1px solid black;
     background-color: #ffdc44;
     border-radius: 10px;
-    width: 4.5rem;
     color: black;
-    padding: 7px;
+    padding: 1%;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    transition-duration: 0.3s;
+    margin-left: 1%;
+    margin-top: 3%;
 }
 
 .don_b:hover {
@@ -107,4 +109,5 @@ button.don_b:hover {
     background-color: yellow;
     border-color: blue;
     border-style: solid;
+    margin-top: 1%;
 }
