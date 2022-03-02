@@ -94,6 +94,9 @@
 form {
     margin-top: 5%;
 }
+.h4{
+    width: 100%;
+}
 
 @media(max-width: 750px) {
     .b1 {
@@ -122,5 +125,37 @@ form {
     .b2 {
         width: 80%;
         margin-left: 10%;
+    }
+}
+
+@media(max-width: 950px){
+    .don_b {
+        display: block;
+        width: 60%;
+        margin-left: 22%;
+    }
+    .donate{
+        margin-left: 20%;
+        position: absolute;
+        left: 20%;
+        padding: 3%;
+    }
+    form {
+        margin-top: 16%;
+    }
+    .page-section {
+        padding-bottom: 8rem;
+    }
+    .h2 {
+        display: none;
+    }
+    .b3{
+        width: 50%;
+    }
+    .h3 {
+        width: 0%;
+    }
+    .h4 {
+        width: 135%;
     }
 }
