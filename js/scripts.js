@@ -74,11 +74,8 @@
 // Toggle the donations box
 document.getElementById('open_donate_box').addEventListener('click', function() {
   var donate_box = document.getElementById('donate_box');
-  if (donate_box.style.display == "none") {
-    donate_box.style.display = "block";
-  } else {
-    donate_box.style.display = "none";
-  }
+  donate_box.style.display = "grid";
+  this.style.display = "none";
 });
 
 // // Highlight the custom input option when the custom input box is clicked
